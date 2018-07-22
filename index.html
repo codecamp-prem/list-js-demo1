@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> List Js Demo 1 </title>
+</head>
+<body>
+<div id="products">
+  <input class="search" placeholder="Search" />
+  <button class="sort" data-sort="name">Sort by name</button>
+  <table>
+    <!-- IMPORTANT, class="list" have to be at tbody -->
+    <tbody class="list">
+      <script id="entry-template" type="text/x-handlebars-template">
+      <tr>
+        <td class="sn">{{sn}}</td>
+        <td class="id">{{id}}</td>
+        <td class="imageUrl">{{imageUrl}}</td>
+        <td class="name">{{name}}</td>
+        <td class="snippet">{{snippet}}</td>
+      </tr>
+      </script>
+    </tbody>
+  </table>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
