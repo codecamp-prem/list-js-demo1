@@ -67,3 +67,7 @@ input:focus {
   top:-4px;
   right:-5px;
 }
+.pagination li {
+  display:inline-block;
+  padding:5px;
+}
