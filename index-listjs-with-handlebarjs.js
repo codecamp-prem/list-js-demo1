@@ -12,7 +12,7 @@ let load = (url) => {
       result_json = '{"products-list":'+result_json+'}';
       let data = JSON.parse(result_json);
       let template = Handlebars.compile( $('#handlebar-template').html() );
-      $('#tablebody').append( template(data) );
+      document.getElementById("tablebody").innerHTML=template(data);
     }
   };
 
