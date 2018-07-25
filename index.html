@@ -24,7 +24,7 @@
 window.onload = function() {
   var s = document.createElement('script');
   s.type = 'text/javascript';
-  var code = "var options = {valueNames: [ 'sn', 'id', 'imageUrl', 'name', 'snippet' ],page: 3,pagination: true};var userList = new List('products-div', options);";
+  var code = "let options = {valueNames: [ 'sn', 'id', 'imageUrl', 'name', 'snippet' ],page: 3,pagination: true};let userList = new List('products-div', options);";
   try {
     s.appendChild(document.createTextNode(code));
     document.body.appendChild(s);
